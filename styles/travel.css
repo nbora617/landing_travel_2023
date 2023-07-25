@@ -1,0 +1,463 @@
+/* 1. 타이틀 */
+.title_bg {
+    background: url(../images/title_bg.jpg) center; 
+    background-size:cover;
+    position:relative;
+}
+.title_bg .contents {
+    width:1200px; margin:0 auto;
+    padding:300px 0 150px 0;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+}
+.title_bg .contents .title {
+    padding:80px 30px;
+    border:3px solid transparent;
+    border-image:linear-gradient(#fff, #1B6B93) 1;
+    background:rgba(0,0,0,0.3);
+    /* border-image-slice:1; */
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:flex-end;
+    margin-bottom:400px;
+}
+.title_bg .contents .title .subtitle {
+    color:#fff; font-family: 'Cafe24Shiningstar'; font-size:2.935rem;
+}
+.title_bg .contents .title h1 {
+    font-family: 'ghanachoco'; font-size:9.375rem; letter-spacing:-0.04em;
+    margin:20px 0;
+    /* 글자색 그라데이션 */
+    background: linear-gradient(60deg, rgba(27,107,147,1) 0%, rgba(255,255,255,1) 100%);
+    background-clip:text;
+    -webkit-background-clip: text;
+    color:transparent;
+}
+.title_bg .contents .title p {
+    font-family: 'KCC-eunyoung'; font-size:5rem; color:#f9d949;
+    transform:rotate(-12.55deg);
+}
+.title_bg .contents .title p:first-child {transform:none;}
+/* 2. 방콕소개(타이틀배경) */
+.title_bg .contents .intro {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    align-items:center;
+    border:1px solid #1B6B93;
+    border-radius:0 120px 0 120px;
+    background:rgba(0,0,0,0.3);
+    padding:30px 50px;
+}
+.title_bg .contents .intro .left {
+    width:674px; margin-right:30px;}
+.title_bg .contents .intro .left .top {
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:flex-start;
+}
+.title_bg .contents .intro .left .top p {}
+.title_bg .contents .intro .left .top p img {}
+.title_bg .contents .intro .left .top p span {
+    color:#fff; font-size:1.625rem; font-weight:700;
+    margin-left:10px;
+}
+.title_bg .contents .intro .left .top h2 {
+    font-family: 'ghanachoco'; font-size:2.9375rem; color:#579bd3;
+    margin:10px 0;
+}
+.title_bg .contents .intro .left .top .b_lang {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:flex-start;
+}
+.title_bg .contents .intro .left .top > .b_lang span {font-weight:400;}
+.title_bg .contents .intro .left .top .b_lang .en {}
+.title_bg .contents .intro .left .top .b_lang .th {}
+.title_bg .contents .intro .left .top .b_lang .en::after {
+    content:'';
+    display:inline-block; width:2px; height:13px;
+    background-color:#fff;
+    margin-left:15px; margin-right:2px;
+}
+.title_bg .contents .intro .left .btm {
+    font-size:1.625rem; letter-spacing:-0.02em; line-height:35px; 
+    color:#fff; font-weight:300;
+    margin-top:30px;
+}
+.title_bg .contents .intro .right {
+    position:relative;
+    width:163px; height:333px;
+}
+.title_bg .contents .intro .right .map {
+    position:absolute;
+    left:0; top:0;
+    width:163px; height:333px;
+}
+.title_bg .contents .intro .right .map img {width:100%; height:100%;}
+.title_bg .contents .intro .right p:nth-child(2) {
+    position:absolute;
+    top:92px; left:45px;
+    font-weight:700;
+}
+.title_bg .contents .intro .right .location {
+    position:absolute;
+    top:129px; left:50.5px;
+}
+.title_bg .contents .intro .right .location img {}
+/* 3. 영상(미리보는 방콕) */
+.video_bg {background:#f1f1f1;}
+.video_bg .video {
+    width:1200px; margin:0 auto; padding:100px 0;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+}
+.video_bg .video h2 {
+    color:#dd704a; font-family: 'ghanachoco'; font-size:3.9375rem;
+    margin-bottom:70px;
+}
+/* 4. travel_style */
+.t_style_bg {background:#f1f1f1;}
+.t_style_bg .t_style {
+    width:1200px; margin:0 auto; padding:100px 0;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+}
+.t_style_bg .t_style h2 {
+    color:#dd704a; font-family: 'ghanachoco'; font-size:3.9375rem;
+    margin-bottom:70px
+}
+.t_style_bg .t_style ul {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    padding:0 142px;
+}
+.t_style_bg .t_style ul li {
+    width:calc(33.33% - 150px / 3); 
+    margin-right:50px;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+}
+.t_style_bg .t_style ul li:last-child {margin-right:0;}
+.t_style_bg .t_style ul li .top {
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+    position:relative;
+    margin-bottom:30px;
+}
+.t_style_bg .t_style ul li .top .img {
+    background-color:#f9d949;
+    width:100%; 
+    border-radius:125px;
+    overflow:hidden;
+}
+.t_style_bg .t_style ul li .top .img img {width:100%}
+.t_style_bg .t_style ul li .top p:last-child {
+    padding:10px 20px; border-radius:30px; background-color:#EBD4CC;
+    font-family: 'ghanachoco'; font-size:1.625rem;
+    position:absolute;
+    left:50px; bottom:-20px;
+}
+.t_style_bg .t_style ul li .btm {
+    font-size:1.25rem; font-weight:500; text-align:center;
+    letter-spacing:-0.02em; line-height:25px;
+}
+/* 5. 관광명소 */
+.tourism_bg {
+    background:url(../images/tourism_bg.jpg) fixed center;
+    background-size:cover;
+}
+.tourism_bg .tourism {
+    width:1200px; margin:0 auto; padding:100px 0;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:flex-end;
+}
+.tourism_bg .tourism h2 {
+    font-family: 'ghanachoco'; font-size:3.9375rem; color:#fff; letter-spacing:-0.02em;
+    text-align:right;
+}
+.tourism_bg .tourism h2::before {
+    content:'';
+    display:block; width:750px; height:1px; 
+    background:linear-gradient(90deg, #F9D949, #fff);
+    margin-bottom:50px;
+}
+.tourism_bg .tourism h2 em::after {
+    content:'';
+    display:block; width:750px; height:1px; 
+    background:linear-gradient(90deg, #F9D949, #fff);
+    margin-top:50px; 
+}
+.tourism_bg .tourism h2 em {
+    color: #F9D949; font-family: 'ghanachoco'; font-size:3.9375rem; letter-spacing:-0.02em;
+    display:block; text-align:right;
+    margin-bottom:70px; margin-top:10px;
+}
+.tourism_bg .tourism ul {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:flex-end;
+}
+.tourism_bg .tourism li {
+    width:calc(33.33% - 60px / 3);
+    margin-right:20px; transition:transform 0.5s;
+}
+.tourism_bg .tourism li:hover {transform:scale(1.2);}
+.tourism_bg .tourism li:last-child {margin-right:0;}
+.tourism_bg .tourism li .img {
+    width:100%;
+    margin-bottom:10px;
+}
+.tourism_bg .tourism li .img img {
+    width:100%; overflow:hidden;
+    border-radius:100px 0 100px 0;
+    }
+.tourism_bg .tourism li .ko {
+    font-weight:700; font-size:2.25rem; color:#fff;
+}
+.tourism_bg .tourism li .en {
+    font-size:1.25rem; color:#fff; font-weight:500; margin:10px 0;
+}
+.tourism_bg .tourism li .desc {
+    font-size:1.25rem; color:#fff; letter-spacing:-0.02em; line-height:30px;
+}
+/* 6.인기명소 */
+.popular_bg {
+    background:url(../images/popular_bg.jpg) fixed center;
+    background-size:cover;
+}
+.popular_bg .popular {
+    width:1200px; margin:0 auto; padding:100px 0;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:flex-start;
+}
+.popular_bg .popular h2 {
+    font-family: 'ghanachoco'; font-size:3.9375rem; color:#fff; letter-spacing:-0.02em;
+    text-align:left;
+}
+.popular_bg .popular h2::before {
+    content:'';
+    display:block; width:750px; height:1px; 
+    background:linear-gradient(90deg, #EB455F, #fff);
+    margin-bottom:50px;
+}
+.popular_bg .popular h2 em::after {
+    content:'';
+    display:block; width:750px; height:1px; 
+    background:linear-gradient(90deg, #EB455F, #fff);
+    margin-top:50px; 
+}
+.popular_bg .popular h2 em {
+    color: #EB455F; font-family: 'ghanachoco'; font-size:3.9375rem; letter-spacing:-0.02em;
+    display:block; text-align:left;
+    margin-bottom:70px; margin-top:10px;
+}
+.popular_bg .popular ul {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:flex-end;
+}
+.popular_bg .popular li {
+    width:calc(33.33% - 60px / 3);
+    margin-right:20px; transition:transform 0.5s;
+}
+.popular_bg .popular li:hover {transform:scale(1.2);}
+.popular_bg .popular li:last-child {margin-right:0;}
+.popular_bg .popular li .img {
+    width:100%;
+    margin-bottom:10px;
+}
+.popular_bg .popular li .img img {
+    width:100%; overflow:hidden;
+    border-radius:100px 0 100px 0;
+    }
+.popular_bg .popular li .ko {
+    font-weight:700; font-size:2.25rem; color:#fff;
+}
+.popular_bg .popular li .en {
+    font-size:1.25rem; color:#fff; font-weight:500; margin:10px 0;
+}
+.popular_bg .popular li .desc {
+    font-size:1.25rem; color:#fff; letter-spacing:-0.02em; line-height:30px;
+}
+.popular_bg .food_list {
+    width:1200px; margin:0 auto;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+}
+.popular_bg .food_list h3 {
+    color: #EB455F; font-family: 'ghanachoco'; font-size:2.25rem;
+}
+.popular_bg .food_list h3::before {
+    content:'';
+    display:block; width:500px; height:1px; 
+    background:linear-gradient(90deg, #EB455F, #fff);
+    margin-bottom:15px;
+}
+.popular_bg .food_list h3::after {
+    content:'';
+    display:block; width:500px; height:1px; 
+    background:linear-gradient(90deg, #EB455F, #fff);
+    margin-top:15px; margin-bottom:70px;
+}
+.popular_bg .food_list ul {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:center;
+    padding:0 80px; margin-bottom:100px;
+}
+.popular_bg .food_list li {
+    width:calc(20% - 50px / 5); 
+    margin-right:10px;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:center;
+}
+.popular_bg .food_list img {width:100%; border-radius:125%;}
+.popular_bg .food_list span {
+    font-weight:700; font-size:1.625rem; color:#fff;
+    margin-top:10px;
+}
+/* 7.가성비호텔 */
+.hotel_bg {
+    background:url(../images/hotel_bg.jpg) fixed center;
+    background-size:cover;
+}
+.hotel_bg .hotel {
+    width:1200px; margin:0 auto; padding:100px 0;
+    display:flex;
+    flex-flow:column nowrap;
+    align-items:flex-end;
+}
+.hotel_bg .hotel h2 {
+    font-family: 'ghanachoco'; font-size:3.9375rem; color:#fff; letter-spacing:-0.02em;
+    text-align:right;
+}
+.hotel_bg .hotel h2::before {
+    content:'';
+    display:block; width:750px; height:1px; 
+    background:linear-gradient(90deg, #D5F302, #fff);
+    margin-bottom:50px;
+}
+.hotel_bg .hotel h2 em::after {
+    content:'';
+    display:block; width:750px; height:1px; 
+    background:linear-gradient(90deg, #D5F302, #fff);
+    margin-top:50px; 
+}
+.hotel_bg .hotel h2 em {
+    color: #FCFFE7;; font-family: 'ghanachoco'; font-size:3.9375rem; letter-spacing:-0.02em;
+    display:block; text-align:right;
+    margin-bottom:20px; margin-top:10px;
+}
+.hotel_bg .hotel a {
+    padding:10px 20px; border-radius:20px; background:#FCFFE7;
+    display:flex;
+    flex-flow:row nowrap;
+    align-items:center;
+    margin-bottom:70px;
+}
+.hotel_bg .hotel a span {
+    font-family: 'ghanachoco'; font-size:1.625rem;
+}
+.hotel_bg .hotel a img {}
+.hotel_bg .hotel ul {
+    display:flex;
+    flex-flow:row nowrap;
+    justify-content:flex-end;
+}
+.hotel_bg .hotel li {
+    width:calc(33.33% - 60px / 3);
+    margin-right:20px;
+    transition:transform 0.5s;
+}
+.hotel_bg .hotel li:hover {transform:scale(1.2);}
+.hotel_bg .hotel li:last-child {margin-right:0;}
+.hotel_bg .hotel li .img {
+    width:100%;
+    margin-bottom:10px;
+}
+.hotel_bg .hotel li .img img {
+    width:100%; overflow:hidden;
+    border-radius:100px 0 100px 0;
+    }
+.hotel_bg .hotel li .ko {
+    font-weight:700; font-size:2.25rem; color:#fff;
+}
+.hotel_bg .hotel li p:nth-child(3) {
+    margin:10px 0;
+    display:flex; 
+    flex-flow:row nowrap;
+    justify-content:flex-start;
+}
+.hotel_bg .hotel li p:nth-child(3) >* {
+    font-size:1.25rem; color:#fff; font-weight:500; 
+}
+.hotel_bg .hotel li p .en::after {
+    content:'';
+    display:inline-block; width:1px; height:12px;
+    background:#fff; margin:0 15px;
+}
+.hotel_bg .hotel li .desc {}
+.hotel_bg .hotel li .desc >* {
+    font-size:1.25rem; color:#fff; letter-spacing:-0.02em; line-height:30px;
+    display:block;
+}
+.hotel_bg .hotel li .desc p::before {
+    content:'';
+    display:inline-block; width:5px; height:5px;
+    border-radius:125%; background:#fff;
+    margin:5px 10px 5px 0;
+}
+/* 설문조사 */
+.survey_bg {background:#48372C;}
+.survey_bg .survey {
+    padding:100px 0; width:1200px; margin:0 auto;
+    display:flex; flex-flow:column nowrap;
+    align-items:center;
+}
+.survey_bg .survey >* {margin-bottom:20px;}
+.survey_bg .survey h2 {
+    color:#fff; font-family: 'ghanachoco'; font-size:1.875rem;
+}
+.survey_bg .survey h2 em {
+    color:#f9d949; font-family: 'ghanachoco'; font-size:1.875rem;
+}
+.survey_bg .survey p {color:#fff; text-align:center; line-height:25px;}
+.survey_bg .survey #surveyFrm {}
+.survey_bg .survey #surveyFrm fieldset {}
+.survey_bg .survey #surveyFrm fieldset ul {}
+.survey_bg .survey #surveyFrm fieldset ul li {
+    padding:10px; background:rgba(241,241,241,0.2);
+    color:#fff; margin-bottom:10px;
+}
+.survey_bg .survey #surveyFrm fieldset ul li:last-child {
+    margin-bottom:20px;
+}
+.survey_bg .survey #surveyFrm fieldset ul li #q1 {}
+.survey_bg .survey #surveyFrm fieldset ul li #q2 {}
+.survey_bg .survey #surveyFrm fieldset ul li #q3 {}
+.survey_bg .survey #surveyFrm fieldset ul li label span {
+    color:#fff;
+    background:/* purple */ url(../images/Button_uncheck.png) no-repeat;
+    padding-left:34px;
+}
+.survey_bg .survey #surveyFrm fieldset ul li label input {
+    appearance:none; /* form input 요소 숨기기 */ }
+/* 상태선택자 (radio check될 경우 span의 이미지 변경하기)*/
+.survey_bg .survey #surveyFrm fieldset ul li label input:checked+span {
+    background:url(../images/Button_check.png) no-repeat;
+}
+.survey_bg .survey #surveyFrm fieldset .surveyBtn {
+    width:427px; padding:10px 0;
+    background:#ebc82e; color:#fff; border-radius:5px;
+}
